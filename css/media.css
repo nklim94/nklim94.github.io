@@ -1,4 +1,7 @@
 @media (min-width: 240px) and (max-width: 1198px) {
+	body {
+		overflow:hidden;
+	}
 	.menu__nav {
 		display: none;
 	}
