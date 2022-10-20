@@ -1,0 +1,435 @@
+/*https://www.figma.com/file/7N8lpunsfVGmn694wed050/Templates-%2325.-More-on-d-e-n.info?node-id=327%3A113 */
+@font-face {
+	font-family: 'Gilroy-light'; 
+	src: local('Gilroy-light'),
+		url(../fonts/Gilroy-Light.otf); 
+}
+@font-face {
+	font-family: 'Gilroy-ExtraBold'; 
+	src: local('Gilroy-ExtraBold'),
+		url(../fonts/Gilroy-ExtraBold.otf); 
+}
+
+.wrapper {
+	display: flex;
+	max-width: 1296px;
+	margin: 0 auto;	
+	justify-content: space-between;	
+	flex-wrap: wrap;
+}
+.first-screen {
+	background:url(../img/first-screen/background.png);	
+}
+.menu {
+	padding-top: 15px;
+	position: relative;
+}
+.menu__items {
+	display: flex;	
+}
+.menu__item a {
+	text-decoration: none;
+	color: white;	
+}
+.menu__item, .menu__item_social {
+	list-style-type: none;
+	margin:auto 0 auto 40px;	
+}
+.menu__item:first-child{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.menu__link { 
+	transition: all 1s;		
+}
+.menu__link:hover {
+	color: black;
+	opacity: .6;
+}
+.menu__item_social {
+	transition: all 1s;
+	border-radius: 10px;
+}
+.menu__item_social:hover {
+	box-shadow: 0px 0px 10px 2px;
+}
+.youtube {
+	margin-left: 185px;
+}
+.vk {
+	margin-left: 20px;
+}
+.first-screen__line{
+	background: white;
+	height: 1px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 200px;
+}
+.first-screen__title .first-screen__h1{
+	flex-basis: 100%;
+	max-width: 636px;
+	max-height: 201px;
+	color: white;		
+	font-weight: 700;
+	font-size: 48px;
+	font-family: 'Gilroy-ExtraBold';
+	margin-bottom: 60px;
+}
+.first-screen__video-play {
+	flex-basis: 100%;
+	margin-bottom: 202px;
+	display: flex;
+	align-items: center;
+}
+.first-screen__cards {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+	position: relative;
+}
+.first-screen__play-button {
+	border: 1px solid white;	
+	border-radius: 50px;
+	height: 80px;
+	width: 80px;	
+}
+.first-screen__play-button:hover {
+	border: 2px solid white;
+}
+.first-screen__play-icon{		
+	border-radius: 50px;
+	height: 64px;
+	width: 64px;
+	margin: 8px 8px;
+	text-align: center;
+	background: #8D86C9;
+	cursor: pointer;
+	transition: all 1s;			
+}
+.first-screen__play-icon:hover {
+	transform: rotate(360deg);
+}
+.first-screen__play-img {
+	margin-top: 22px;
+}
+.first-screen__play-text {
+	margin-left: 30px;
+	font-family: 'Gilroy-light';
+	color: white;
+	font-size: 18px;
+	max-width: 170px;
+	line-height: 1.5em;
+}
+.first-screen__card-item {
+	flex-basis: 23%;
+	background: #8D86C9;
+	color: white;
+	padding: 35px;
+	font-family: 'Gilroy-light';
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 1s;
+	position: relative;		
+}
+.first-screen__card-active {	
+	position:absolute ;
+	width: 100%;
+	height: 20%;
+	top: 0;
+	left: 0;
+	background: #8D86C9;	
+	transition: all .5s;
+}
+.first-screen__card-item:hover .first-screen__card-active{
+	transform: translateY(-20px);
+	height: 30%;
+}
+.first-screen__card-item h2 {
+	margin-top: 17px;
+	font-family: 'Gilroy-light';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+}
+.first-screen__card-item h2::after {
+	content: url('../img/first-screen/ci_external-link.png');
+	margin-left: 15%;	
+}
+.main {
+	margin-bottom: 150px;
+}
+.advantages{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 150px;
+	width: 100%;
+	flex-wrap: wrap;	
+}
+.advantages__item {
+	flex-basis: 30%;
+	padding: 20px;
+	border: 1px solid #F7ECE1;
+	position: relative;
+	margin-bottom: 150px;	
+}
+.advantages__title {
+	position: absolute;
+	bottom: 10%;
+	font-family: 'Gilroy-light';	
+	color: white;
+	max-width:280px ;
+	font-size: 27px;
+	text-align: center;
+	left: 0; right: 0;
+  	margin: 0 auto;  		
+ }
+ .sport-club {
+ 	font-family: 'Gilroy-light';
+ 	width: 1076px;
+ 	margin: 0 auto;
+ 	display: flex; 	
+ 	position: relative;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ 	margin-bottom: 150px; 	
+ }
+ .sport-club__text {
+ 	background: #F7ECE1; 	
+ 	max-width: 636px;
+ 	margin-left: auto;
+ 	left: 40%;
+ 	z-index: 0;
+ 	padding: 70px 60px 84px 140px;
+ 	font-size: 14px;
+ }
+ .sport-club__img {
+ 	position: absolute;
+ 	left: 0;
+ 	z-index: 1; 	
+ }
+ .sport-club__title {
+ 	font-family: 'Gilroy-ExtraBold';
+ 	font-size: 36px;
+ 	margin-bottom: 25px;
+ }
+ .sport-club__subtitle {
+ 	margin-bottom: 25px;
+ }
+.sport-club__li-title {
+	font-size: 21px;	
+	margin-bottom: 25px;
+}
+.sport-club__li-items {
+	display: flex;		
+	margin-bottom: 25px;
+	font-size: 14px;
+}
+.sport-club__li-items::before{
+	content: url(../img/main/li-square.png);
+	margin-right: 23px;
+	display: block;
+}
+.trainers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.trainers__card-item {
+	font-family: 'Gilroy-light';
+}
+.trainers__title {
+	display: block;
+	flex-basis: 49%;
+	font-size: 36px;
+	margin-bottom: 75px;
+}
+.trainers__buttons {
+	margin-left: auto;
+}
+.trainers__button-left, .trainers__button-right, .services__button-left,
+ .services__button-right {
+	background: #8D86C9;
+	border: none;
+	color: white;
+	width: 35px;
+	height: 35px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all .5s;
+}
+.trainers__button-left:hover, .trainers__button-right:hover, 
+.services__button-left:hover, .services__button-right:hover {
+	box-shadow: 1px 1px 6px 3px #8D86C9;
+}
+.trainers__button-left, .services__button-left {
+	margin-right: 20px;
+}
+.trainers__cards {
+	width: 100%;	
+}
+.trainers__slider{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 150px;
+	transition: all 1s;
+
+}
+.trainers__card-item {
+	text-align: center;	
+	flex-basis: 16%;
+	transition: all .5s;	
+}
+.trainers__images {
+	margin-bottom: 25px;
+}
+.trainers__card-title {
+	font-weight: bolder;
+	margin-bottom: 25px;
+	line-height: 25px;	
+}
+.trainers__card-subtitle {
+	font-size: 14px;
+}
+.price {
+	width: 526px;
+	position: relative;	
+}
+.price__title, .services__subtitle {
+	font-family: 'Gilroy-light';	
+	font-size: 36px;
+	line-height: 140%;
+}
+.price__title {
+	margin-bottom: 75px;
+}
+.price__item {
+	padding: 15.5px 30px 15.5px 30px;
+	background: #8D86C9;
+	margin-bottom: 30px;
+	color: white;
+	cursor: pointer;
+}
+.price__item::after{
+	content: url(../img/main/main-strelka.png);
+	position: absolute;
+	right: 10%;	
+}
+.price {
+	font-family: 'Gilroy-light';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 140%;
+}
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 636px;
+}
+.services__buttons {
+	margin-left: auto;
+}
+.services__card-border {
+	border: 1px solid #F7ECE1;
+	padding: 30px 25px;
+	max-width: 636px;
+	max-height: 330px;
+	margin-top: 30px;
+}
+.services__card {
+	width: 586px;
+	height: 270px;	
+	position: relative;
+	background: URL(../img/main/services1.png);
+	overflow: hidden;
+}
+.services__card-text {
+	font-family: 'Gilroy-light';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+	color: white;	
+}
+.sevices__card_hover {
+	width: 586px;
+	height: 270px;
+	background: black;
+	opacity: .3;
+	transform: translateY(300px);
+	transition: all 1s;	
+}
+.services__card:hover  .sevices__card_hover {
+	transform: translateY(0px);	
+}
+.footer {
+	font-family: 'Gilroy-light';
+	font-size: 14px;
+	background: #F7ECE1;
+	padding: 38px 0;
+}
+.footer__copyright {
+	opacity: .5;
+}
+.footer__list {
+	display: flex;
+	justify-content: space-between;	
+}
+.footer__list-item {
+	margin-left: 40px;
+}
+.footer__social {	
+	margin-left: auto;
+}
+.footer__link {
+	text-decoration: none;
+	color: black;
+	transition: all .5s;
+}
+.footer__link:hover {
+	opacity: .6;
+}
+.footer .wrapper, .first-screen .wrapper {
+	align-items: center;
+}
+.footer__social>* {
+	transition: all 1s;
+	border-radius: 10px;
+}
+.footer__social>*:hover {
+	box-shadow: 0px 0px 6px 4px #8D86C9;
+}
+.hamburger {
+	display: none;
+}
+.hamburger__list {	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: grey;
+	font-size: 30px;
+	opacity: .9;
+	transform: translateX(-300px);
+	transition: all 1s;		
+}
+.hamburger__list-item {
+	margin-bottom: 10px;	
+	background: whitesmoke;
+	transition: all 1s;	
+	padding: 0 10px;	
+}
+.hamburger__list-item:hover{
+	box-shadow: 0px 0px 6px 4px;
+}
+.hamburger__list_active{
+	transform: translateX(0px);	
+}
+.hamburger__list-item_active{
+	transform: translateX(0px);	
+}
