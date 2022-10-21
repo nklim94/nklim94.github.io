@@ -117,10 +117,13 @@
 	}
 	.news__card {
 		flex-basis: 100%;
-		width: 100%;
-		height:560px;
+		width: 100%;		
 	}
 	.news__card img {
 		width: 100%;
+	}
+	.news__button {
+		position:relative;
+		margin-top:20px;
 	}
 }
