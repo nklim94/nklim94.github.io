@@ -38,9 +38,7 @@
 .news__img, .news__data, .news__title {
 	margin-bottom: 25px;
 }
-.news__button {
-	bottom: 5%;
-	position: absolute;
+.news__button {		
 	background:  #8D86C9;
 	border: none;
 	color: white;
