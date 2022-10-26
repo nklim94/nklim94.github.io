@@ -124,3 +124,33 @@
 	}
 
 }
+@media (min-width: 570px) and (max-width: 1198px) {
+	.first-screen {
+		background-size:cover;
+	}
+	.first-screen__card-item {
+		width:65%;
+	}
+	.first-screen__card-item h2::after {
+		position: absolute;
+		margin-left: 10%;
+	}
+	.advantages__item {
+		flex-basis:48%;
+		margin-bottom:20px;
+	}
+	.sport-club__text {
+		width:100%;
+	}
+	.price__title {
+		text-align:center;
+		mergin-top:20px;
+	}
+	.price__item {
+		width: 60%;
+		margin: 0px auto 30px auto;
+	}
+	.services {
+		margin: 0 auto;
+	}
+}
