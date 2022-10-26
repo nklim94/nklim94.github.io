@@ -68,8 +68,7 @@
 }
 .first-screen__title .first-screen__h1{
 	flex-basis: 100%;
-	max-width: 636px;
-	max-height: 201px;
+	max-width: 636px;	
 	color: white;		
 	font-weight: 700;
 	font-size: 48px;
