@@ -140,7 +140,7 @@
 		margin-bottom:20px;
 	}
 	.sport-club__text {
-		width:100%;
+		max-width:100%;
 	}
 	.price__title {
 		text-align:center;
